@@ -23,6 +23,10 @@ PRODUCT_SHIPPING_API_LEVEL := 31
 # Inherit from motorola sm7325-common
 $(call inherit-product, device/motorola/sm7325-common/common.mk)
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksResDevice \

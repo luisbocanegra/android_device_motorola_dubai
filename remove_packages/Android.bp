@@ -1,0 +1,13 @@
+cc_library_shared {
+    name: "RemovePackages",
+    overrides: [
+        "Photos",
+        "Maps",
+        "Chrome",
+        "Tycho",
+        "PixelAIPrebuilt",
+        "WallpaperAIPrebuilt",
+        "AICorePrebuilt"
+    ],
+    compile_multilib: "64",
+}
